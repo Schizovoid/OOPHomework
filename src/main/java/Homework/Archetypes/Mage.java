@@ -1,12 +1,12 @@
-package hm1.Archetypes;
+package Homework.Archetypes;
 
 public abstract class Mage extends Character {
     protected int maxMana;
     protected int mana;
     protected int intelligence;
 
-    public Mage(String name) {
-        super(name);
+    public Mage(String name, int x, int y){
+        super(name, x, y);
     }
 
     public void attack(Character target) {

@@ -1,14 +1,16 @@
-package hm1.Classes;
+package Homework.Classes;
 
-import hm1.Archetypes.Mage;
+import Homework.Archetypes.Mage;
 
 public class Wizard extends Mage {
 
-    public Wizard(String name) {
-        super(name);
+    public Wizard(String name, int x, int y){
+        super(name, x, y);
         this.maxHealth = 10;
         this.maxMana = 20;
         this.intelligence = 10;
+        this.health = this.maxHealth;
+        this.mana = this.maxMana;
     }
 
     @Override

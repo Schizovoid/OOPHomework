@@ -1,13 +1,15 @@
-package hm1.Classes;
+package Homework.Classes;
 
-import hm1.Archetypes.Mage;
+import Homework.Archetypes.Mage;
 
 public class Monk extends Mage {
-    public Monk(String name) {
-        super(name);
+    public Monk(String name, int x, int y){
+        super(name, x, y);
         this.maxHealth = 15;
         this.maxMana = 30;
         this.intelligence = 5;
+        this.health = this.maxHealth;
+        this.mana = this.maxMana;
     }
 
 @Override

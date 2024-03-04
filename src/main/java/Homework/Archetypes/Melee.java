@@ -1,17 +1,17 @@
-package hm1.Archetypes;
+package Homework.Archetypes;
 
-public abstract class Ranged extends Character {
-    protected int dexterity;
-    protected int maxAmmo;
-    protected int ammo;
+public abstract class Melee extends Character {
+    protected int strength;
+    protected int stamina;
+    protected int maxStamina;
 
-    public Ranged(String name) {
-        super(name);
+    public Melee(String name, int x, int y){
+        super(name, x, y);
     }
 
     public void attack (Character target){
-            target.health = target.health - this.dexterity;
-            this.ammo = this.ammo - this.dexterity;
+            target.health = target.health - this.strength;
+            this.stamina = this.stamina - this.strength;
             if (target.health <= 0){
                 target.die();
                 System.out.println(String.format("%s dies!", target.name));
@@ -20,7 +20,7 @@ public abstract class Ranged extends Character {
 
     public void rest() {
         if (this.isAlive) {
-            this.ammo = maxAmmo;
+            this.stamina = maxStamina;
             System.out.println(String.format("%s rests!", this.name));
         } else {
             System.out.println("This character could not perform this action.");
