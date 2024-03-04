@@ -13,6 +13,10 @@ public class Peasant extends Melee {
     }
 
     @Override
+    public void step() {
+
+    }
+    @Override
     public String toString(){
         return String.format("This is %s, they are a peasant", name);
     }

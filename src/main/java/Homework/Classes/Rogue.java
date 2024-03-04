@@ -13,6 +13,10 @@ public class Rogue extends Melee {
     }
 
     @Override
+    public void step() {
+
+    }
+    @Override
     public String toString(){
         return String.format("This is %s, they are a rogue", name);
     }

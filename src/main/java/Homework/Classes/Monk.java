@@ -12,6 +12,10 @@ public class Monk extends Mage {
         this.mana = this.maxMana;
     }
 
+    @Override
+    public void step() {
+
+    }
 @Override
     public String toString(){
         return String.format("This is %s, they are a monk", name);

@@ -1,5 +1,7 @@
 package Homework.Archetypes;
 
+import Homework.Concepts.CharacterAction;
+
 public abstract class Mage extends Character {
     protected int maxMana;
     protected int mana;
@@ -9,6 +11,10 @@ public abstract class Mage extends Character {
         super(name, x, y);
     }
 
+    @Override
+    public void step() {
+
+    }
     public void attack(Character target) {
             target.health = target.health - this.intelligence;
             this.mana = this.mana - this.intelligence;

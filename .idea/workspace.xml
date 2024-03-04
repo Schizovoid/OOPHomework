@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Names.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Teams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/Concepts/CharacterAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Arbalest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Monk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Peasant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Sniper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Spearman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hm1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Arbalest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Peasant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Sniper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Spearman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Classes/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,7 +58,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.hm2">
+  <component name="RunManager" selected="Application.hm3">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hm1.Main" />
       <module name="OOPHomework" />
@@ -88,11 +85,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="hm3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework.LessonsTasks.hm3" />
+      <module name="OOPHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Homework.LessonsTasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.hm3" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.hm2" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.hm2" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708875542270</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Homework done">
+      <created>1709555073310</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709555073310</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +147,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="Homework done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework done" />
   </component>
 </project>

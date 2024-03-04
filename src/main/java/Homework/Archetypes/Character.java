@@ -1,9 +1,12 @@
 package Homework.Archetypes;
 
+import Homework.Concepts.CharacterAction;
 import Homework.Concepts.Location;
 import Homework.Concepts.Teams;
 
-public abstract class Character {
+import java.util.ArrayList;
+
+public abstract class Character implements CharacterAction {
     public String getName() {
         return name;
     }
@@ -13,7 +16,6 @@ public abstract class Character {
     protected int maxHealth;
     protected int health;
     public Location location;
-
     public Teams team;
     public Teams getTeam() {
         return team;
@@ -21,11 +23,25 @@ public abstract class Character {
     public void setTeam(Teams team) {
         this.team = team;
     }
+
+    public ArrayList<Character> getTargetTeam() {
+        return targetTeam;
+    }
+
+    public void setTargetTeam(ArrayList<Character> targetTeam) {
+        this.targetTeam = targetTeam;
+    }
+
+    ArrayList<Character> targetTeam;
+
     public Character(String name, int x, int y){
         this.name = name;
         location = new Location(x, y);
     }
 
+    public void step() {
+
+    }
 
     public void attack (Character target){
     }

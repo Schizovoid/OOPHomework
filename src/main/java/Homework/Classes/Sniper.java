@@ -11,6 +11,10 @@ public class Sniper extends Ranged {
         this.health = this.maxHealth;
         this.ammo = this.maxAmmo;
     }
+    @Override
+    public void step() {
+
+    }
 @Override
     public String toString(){
         return String.format("This is %s, they are a sniper", name);

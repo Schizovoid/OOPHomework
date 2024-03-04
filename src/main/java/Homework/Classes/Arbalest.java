@@ -13,6 +13,11 @@ public class Arbalest extends Ranged {
     }
 
     @Override
+    public void step() {
+
+    }
+
+    @Override
     public String toString(){
         return String.format("This is %s, they are an arbalest", name);
     }

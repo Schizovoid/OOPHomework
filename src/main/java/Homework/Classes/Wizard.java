@@ -14,6 +14,10 @@ public class Wizard extends Mage {
     }
 
     @Override
+    public void step() {
+
+    }
+    @Override
     public String toString(){
         return String.format("This is %s, they are a wizard", name);
     }

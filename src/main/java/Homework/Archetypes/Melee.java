@@ -9,6 +9,11 @@ public abstract class Melee extends Character {
         super(name, x, y);
     }
 
+    @Override
+    public void step() {
+
+    }
+
     public void attack (Character target){
             target.health = target.health - this.strength;
             this.stamina = this.stamina - this.strength;

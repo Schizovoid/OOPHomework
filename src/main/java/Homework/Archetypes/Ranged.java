@@ -11,6 +11,17 @@ public abstract class Ranged extends Character {
         super(name, x, y);
     }
 
+    public void step() {
+        if (this.isAlive){
+            if (this.ammo > 0){
+                attackNearest(this.getTargetTeam());
+            } else {
+                rest();
+            }
+        }
+
+    }
+
     protected Character searchForTarget(ArrayList<Character> targetTeam){
         Character target = targetTeam.get(0);
         double nearest = 100;

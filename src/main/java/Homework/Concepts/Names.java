@@ -1,5 +1,5 @@
 package Homework.Concepts;
 
 public enum Names {
-    Ivan, Olga, Kirill, Anton, Sergey, Svetlana
+    Ivan, Olga, Kirill, Anton, Sergey, Svetlana, Elena, Vasiliy, Boris
 }
