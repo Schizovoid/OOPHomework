@@ -15,6 +15,12 @@ public abstract class Character implements CharacterAction {
     protected boolean isAlive = true;
     protected int maxHealth;
     protected int health;
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    protected int initiative;
     public Location location;
     public Teams team;
     public Teams getTeam() {
@@ -38,9 +44,9 @@ public abstract class Character implements CharacterAction {
         this.name = name;
         location = new Location(x, y);
     }
-
+@Override
     public void step() {
-
+        System.out.println(String.format("%s doesn't know what to do yet.", this.getName()));
     }
 
     public void attack (Character target){

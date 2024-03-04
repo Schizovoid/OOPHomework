@@ -1,8 +1,9 @@
 package Homework.Classes;
 
 import Homework.Archetypes.Melee;
+import Homework.Concepts.CharacterAction;
 
-public class Peasant extends Melee {
+public class Peasant extends Melee implements CharacterAction {
     public Peasant(String name, int x, int y){
         super(name, x, y);
         this.maxHealth = 30;
@@ -10,9 +11,9 @@ public class Peasant extends Melee {
         this.strength = 5;
         this.health = this.maxHealth;
         this.stamina = this.maxStamina;
+        this.initiative = 0;
     }
-
-    @Override
+@Override
     public void step() {
 
     }

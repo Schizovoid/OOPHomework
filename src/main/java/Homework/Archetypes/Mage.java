@@ -2,7 +2,7 @@ package Homework.Archetypes;
 
 import Homework.Concepts.CharacterAction;
 
-public abstract class Mage extends Character {
+public abstract class Mage extends Character implements CharacterAction {
     protected int maxMana;
     protected int mana;
     protected int intelligence;

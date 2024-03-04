@@ -4,8 +4,10 @@ import Homework.Archetypes.Character;
 import Homework.Classes.*;
 import Homework.Concepts.Names;
 import Homework.Concepts.Teams;
+import Homework.Concepts.CharacterAction;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 import java.util.Random;
 
 public class hm3 {
@@ -16,10 +18,32 @@ public class hm3 {
         teamRed.add(generateCharacter(Teams.RED, teamBlue, 7, 7));
         teamRed.add(generateCharacter(Teams.RED, teamBlue, 8, 5));
         teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 2, 5));
-        teamRed.add(generateCharacter(Teams.RED, teamBlue, 3, 4));
-
+        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 3, 4));
+        System.out.println(teamRed.get(0).toString());
+        System.out.println(teamBlue.get(0).toString());
+        System.out.println(teamRed.get(1).toString());
+        System.out.println(teamBlue.get(1).toString());
+        startTurn(teamRed, teamBlue);
     }
 
+    public static void startTurn(ArrayList<Character> team1, ArrayList<Character> team2){
+        for (int i = 3; i >= 0; i--) {
+            ListIterator<Character> iter = team1.listIterator();
+            ListIterator<Character> iter2 = team2.listIterator();
+            while (iter.hasNext()){
+                Character character = iter.next();
+                if (character.getInitiative() == i){
+                    character.step();
+                }
+            }
+            while (iter2.hasNext()){
+                Character character = iter2.next();
+                if (character.getInitiative() == i){
+                    character.step();
+                }
+            }
+        }
+    }
     public static Character generateCharacter(Teams team, ArrayList<Character> targetTeam, int x, int y) {
         Character character;
         switch (new Random().nextInt(0, 6)) {

@@ -1,8 +1,9 @@
 package Homework.Classes;
 
 import Homework.Archetypes.Mage;
+import Homework.Concepts.CharacterAction;
 
-public class Wizard extends Mage {
+public class Wizard extends Mage implements CharacterAction {
 
     public Wizard(String name, int x, int y){
         super(name, x, y);
@@ -11,9 +12,9 @@ public class Wizard extends Mage {
         this.intelligence = 10;
         this.health = this.maxHealth;
         this.mana = this.maxMana;
+        this.initiative = 1;
     }
-
-    @Override
+@Override
     public void step() {
 
     }

@@ -1,6 +1,8 @@
 package Homework.Archetypes;
 
-public abstract class Melee extends Character {
+import Homework.Concepts.CharacterAction;
+
+public abstract class Melee extends Character implements CharacterAction {
     protected int strength;
     protected int stamina;
     protected int maxStamina;
