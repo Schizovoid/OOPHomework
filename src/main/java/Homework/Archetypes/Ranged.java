@@ -1,14 +1,28 @@
 package Homework.Archetypes;
 
+import Homework.Concepts.CharacterAction;
+
 import java.util.ArrayList;
 
-public abstract class Ranged extends Character {
+public abstract class Ranged extends Character implements CharacterAction {
     protected int dexterity;
     protected int maxAmmo;
     protected int ammo;
 
     public Ranged(String name, int x, int y){
         super(name, x, y);
+    }
+
+    @Override
+    public void step() {
+        if (this.isAlive){
+            if (this.ammo > 0){
+                attackNearest(this.getTargetTeam());
+            } else {
+                rest();
+            }
+        }
+
     }
 
     protected Character searchForTarget(ArrayList<Character> targetTeam){

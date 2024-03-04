@@ -1,8 +1,9 @@
 package Homework.Classes;
 
 import Homework.Archetypes.Mage;
+import Homework.Concepts.CharacterAction;
 
-public class Monk extends Mage {
+public class Monk extends Mage implements CharacterAction {
     public Monk(String name, int x, int y){
         super(name, x, y);
         this.maxHealth = 15;
@@ -10,8 +11,12 @@ public class Monk extends Mage {
         this.intelligence = 5;
         this.health = this.maxHealth;
         this.mana = this.maxMana;
+        this.initiative = 1;
     }
+@Override
+    public void step() {
 
+    }
 @Override
     public String toString(){
         return String.format("This is %s, they are a monk", name);

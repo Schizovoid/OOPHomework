@@ -1,12 +1,19 @@
 package Homework.Archetypes;
 
-public abstract class Melee extends Character {
+import Homework.Concepts.CharacterAction;
+
+public abstract class Melee extends Character implements CharacterAction {
     protected int strength;
     protected int stamina;
     protected int maxStamina;
 
     public Melee(String name, int x, int y){
         super(name, x, y);
+    }
+
+    @Override
+    public void step() {
+
     }
 
     public void attack (Character target){

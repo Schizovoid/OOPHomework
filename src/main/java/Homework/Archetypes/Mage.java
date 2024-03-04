@@ -1,6 +1,8 @@
 package Homework.Archetypes;
 
-public abstract class Mage extends Character {
+import Homework.Concepts.CharacterAction;
+
+public abstract class Mage extends Character implements CharacterAction {
     protected int maxMana;
     protected int mana;
     protected int intelligence;
@@ -9,6 +11,10 @@ public abstract class Mage extends Character {
         super(name, x, y);
     }
 
+    @Override
+    public void step() {
+
+    }
     public void attack(Character target) {
             target.health = target.health - this.intelligence;
             this.mana = this.mana - this.intelligence;
