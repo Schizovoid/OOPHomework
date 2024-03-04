@@ -1,13 +1,15 @@
-package hm1.Classes;
+package Homework.Classes;
 
-import hm1.Archetypes.Melee;
+import Homework.Archetypes.Melee;
 
 public class Spearman extends Melee {
-    public Spearman(String name) {
-        super(name);
+    public Spearman(String name, int x, int y){
+        super(name, x, y);
         this.maxHealth = 15;
         this.maxStamina = 20;
         this.strength = 10;
+        this.health = this.maxHealth;
+        this.stamina = this.maxStamina;
     }
 
     @Override
