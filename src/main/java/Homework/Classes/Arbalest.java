@@ -3,7 +3,7 @@ package Homework.Classes;
 import Homework.Archetypes.Ranged;
 import Homework.Concepts.CharacterAction;
 
-public class Arbalest extends Ranged implements CharacterAction {
+public class Arbalest extends Ranged  {
     public Arbalest(String name, int x, int y){
         super(name, x, y);
         this.maxHealth = 20;
@@ -14,9 +14,6 @@ public class Arbalest extends Ranged implements CharacterAction {
         this.initiative = 3;
     }
 
-    public void step() {
-
-    }
 
     @Override
     public String toString(){

@@ -4,7 +4,7 @@ import Homework.Concepts.CharacterAction;
 
 import java.util.ArrayList;
 
-public abstract class Ranged extends Character implements CharacterAction {
+public abstract class Ranged extends Character {
     protected int dexterity;
     protected int maxAmmo;
     protected int ammo;

@@ -2,7 +2,7 @@ package Homework.Archetypes;
 
 import Homework.Concepts.CharacterAction;
 
-public abstract class Melee extends Character implements CharacterAction {
+public abstract class Melee extends Character {
     protected int strength;
     protected int stamina;
     protected int maxStamina;
