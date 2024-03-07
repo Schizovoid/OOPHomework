@@ -78,6 +78,16 @@ public abstract class Character implements CharacterAction {
 
     public void heal (Character target){
     }
+    public void move (Location targetLoc){
+        if (targetLoc.isOccupied()) {
+            System.out.println(String.format("%s could not move to this location!", this.getName()));
+        } else {
+            setLocation(targetLoc);
+            System.out.println(String.format("%s moves to X: %d , Y: %d", this.getName(), targetLoc.getX(), targetLoc.getY()));
+            targetLoc.setOccupied(true);
+            targetLoc.setOccupant(this);
+        }
+    }
 
     public void die() {
         this.isAlive = false;

@@ -13,14 +13,14 @@ public class hm4 {
     public static void main(String[] args) {
         ArrayList <Character> teamRed = new ArrayList<>();
         ArrayList <Character> teamBlue = new ArrayList<>();
-        teamRed.add(generateCharacter(Teams.RED, teamBlue, 3, 5));
-        teamRed.add(generateCharacter(Teams.RED, teamBlue, 8, 5));
-        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 2, 5));
-        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 8, 6));
+        teamRed.add(generateCharacter(Teams.RED, teamBlue, 7, 7));
+        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 2, 4));
         System.out.println(teamRed.get(0).toString());
         System.out.println(teamBlue.get(0).toString());
-        System.out.println(teamRed.get(1).toString());
-        System.out.println(teamBlue.get(1).toString());
+        startTurn(teamRed, teamBlue);
+        startTurn(teamRed, teamBlue);
+        startTurn(teamRed, teamBlue);
+        startTurn(teamRed, teamBlue);
         startTurn(teamRed, teamBlue);
     }
 

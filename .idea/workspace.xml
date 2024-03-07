@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Step added, Ranged characters changed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" afterDir="false" />
+    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Melee characters search and attack patterns added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709563046772</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Melee characters search and attack patterns added">
+      <created>1709820512694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709820512694</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +166,7 @@
     <MESSAGE value="initial" />
     <MESSAGE value="Homework done" />
     <MESSAGE value="Step added, Ranged characters changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step added, Ranged characters changed" />
+    <MESSAGE value="Melee characters search and attack patterns added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Melee characters search and attack patterns added" />
   </component>
 </project>
