@@ -5,6 +5,7 @@ import Homework.Concepts.Location;
 import Homework.Concepts.Teams;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public abstract class Character implements CharacterAction {
     public String getName() {
@@ -13,6 +14,15 @@ public abstract class Character implements CharacterAction {
 
     protected String name;
     protected boolean isAlive = true;
+    protected boolean enemyAdjacent;
+    public boolean isEnemyAdjacent() {
+        return enemyAdjacent;
+    }
+    public void setEnemyAdjacent(boolean enemyAdjacent){
+        this.enemyAdjacent = enemyAdjacent;
+    }
+
+
     protected int maxHealth;
     protected int health;
 
@@ -21,6 +31,15 @@ public abstract class Character implements CharacterAction {
     }
 
     protected int initiative;
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
     public Location location;
     public Teams team;
     public Teams getTeam() {
@@ -43,6 +62,8 @@ public abstract class Character implements CharacterAction {
     public Character(String name, int x, int y){
         this.name = name;
         location = new Location(x, y);
+        this.location.setOccupant(this);
+        this.location.setOccupied(true);
     }
 @Override
     public void step() {
