@@ -3,7 +3,7 @@ package Homework.Classes;
 import Homework.Archetypes.Ranged;
 import Homework.Concepts.CharacterAction;
 
-public class Sniper extends Ranged implements CharacterAction {
+public class Sniper extends Ranged {
     public Sniper(String name, int x, int y){
         super(name, x, y);
         this.maxHealth = 5;
@@ -13,9 +13,7 @@ public class Sniper extends Ranged implements CharacterAction {
         this.ammo = this.maxAmmo;
         this.initiative = 3;
     }
-    public void step() {
 
-    }
 @Override
     public String toString(){
         return String.format("This is %s, they are a sniper", name);
