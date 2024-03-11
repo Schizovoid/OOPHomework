@@ -40,30 +40,30 @@ public class Main {
             int rnd = new Random().nextInt(4);
             switch (rnd) {
                 case (0) :
-                    greenTeam.add(new Bowman(generateName(), new Location(i+1, 1), greenTeam, blueTeam));
+                    greenTeam.add(new Bowman(generateName(), new Location(i+1, 10), greenTeam, blueTeam));
                     break;
                 case (1) :
-                    greenTeam.add(new Rogue(generateName(), new Location(i+1, 1), greenTeam, blueTeam));
+                    greenTeam.add(new Rogue(generateName(), new Location(i+1, 10), greenTeam, blueTeam));
                     break;
                 case (2) :
-                    greenTeam.add(new Wizard(generateName(), new Location(i+1, 1), greenTeam, blueTeam));
+                    greenTeam.add(new Wizard(generateName(), new Location(i+1, 10), greenTeam, blueTeam));
                     break;
-                default: greenTeam.add(new Peasant(generateName(), new Location(i+1, 1), greenTeam, blueTeam));
+                default: greenTeam.add(new Peasant(generateName(), new Location(i+1, 10), greenTeam, blueTeam));
             }
         }
         for (int i = 0; i < units_amount; i++){
             int rnd = new Random().nextInt(4);
             switch (rnd) {
                 case (0) :
-                    blueTeam.add(new Arbalest(generateName(), new Location(i+1, 10), blueTeam, greenTeam));
+                    blueTeam.add(new Arbalest(generateName(), new Location(i+1, 1), blueTeam, greenTeam));
                     break;
                 case (1) :
-                    blueTeam.add(new Spearman(generateName(), new Location(i+1, 10), blueTeam, greenTeam));
+                    blueTeam.add(new Spearman(generateName(), new Location(i+1, 1), blueTeam, greenTeam));
                     break;
                 case (2) :
-                    blueTeam.add(new Monk(generateName(), new Location(i+1, 10), blueTeam, greenTeam));
+                    blueTeam.add(new Monk(generateName(), new Location(i+1, 1), blueTeam, greenTeam));
                     break;
-                default: blueTeam.add(new Peasant(generateName(), new Location(i+1, 10), blueTeam, greenTeam));
+                default: blueTeam.add(new Peasant(generateName(), new Location(i+1, 1), blueTeam, greenTeam));
             }
         }
 
