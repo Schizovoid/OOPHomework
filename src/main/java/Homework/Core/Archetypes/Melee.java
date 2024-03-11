@@ -33,9 +33,9 @@ public abstract class Melee extends BaseHero {
     @Override
     public void step() {
         if (this.isAlive && this.stamina >= this.strength){
-            searchAdjacent(targetTeam);
+            searchAdjacent(searchForTarget(targetTeam));
             if (isEnemyAdjacent()) {
-                attackAdjacent(targetTeam);
+                attack(searchForTarget(targetTeam));
             } else {
                 moveTowardTarget(searchForTarget(targetTeam));
             }
@@ -55,39 +55,7 @@ public abstract class Melee extends BaseHero {
     }
 
 
-    protected void attackAdjacent(ArrayList<BaseHero> targetTeam){
-        ListIterator<BaseHero> iter = targetTeam.listIterator();
-        while(iter.hasNext()) {
-            BaseHero target = iter.next();
-            if (target.isAlive && target.getHeroTeam() != this.getHeroTeam()) {
-                if (target.getLocation().getX() - this.getLocation().getX() == -1 |
-                        target.getLocation().getX() - this.getLocation().getX() == 1 |
-                        target.getLocation().getY() - this.getLocation().getY() == -1 |
-                        target.getLocation().getY() - this.getLocation().getY() == 1)
-                {
-                    attack(target);
-                    break;
-                } else if (target.getLocation().getX() - this.getLocation().getX() == -1 && target.getLocation().getY() - this.getLocation().getY() == -1) {
-                    attack(target);
-                    break;
-                } else if (target.getLocation().getX() - this.getLocation().getX() == -1 && target.getLocation().getY() - this.getLocation().getY() == 1) {
-                    attack(target);
-                    break;
-                } else if (target.getLocation().getX() - this.getLocation().getX() == 1 && target.getLocation().getY() - this.getLocation().getY() == -1 ) {
-                    attack(target);
-                    break;
-                } else if (target.getLocation().getX() - this.getLocation().getX() == 1 && target.getLocation().getY() - this.getLocation().getY() == 1){
-                    attack(target);
-                    break;
-            }
-        }
-        }
-    }
-
-    protected void searchAdjacent(ArrayList<BaseHero> targetTeam){
-        ListIterator<BaseHero> iter = targetTeam.listIterator();
-        while(iter.hasNext()) {
-            BaseHero target = iter.next();
+    protected void searchAdjacent(BaseHero target){
             if (target.isAlive && target.getHeroTeam() != this.getHeroTeam()) {
                 if (target.getLocation().getX() - this.getLocation().getX() == -1 | target.getLocation().getX() - this.getLocation().getX() == 1 |
                         target.getLocation().getY() - this.getLocation().getY() == -1 | target.getLocation().getY() - this.getLocation().getY() == 1) {
@@ -95,7 +63,6 @@ public abstract class Melee extends BaseHero {
                 }
             }
         }
-    }
 
     protected void moveTowardTarget(BaseHero target){
     if (Math.abs(target.getLocation().getX() - this.location.getX()) < Math.abs(target.getLocation().getY() - this.location.getY())){
