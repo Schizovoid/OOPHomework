@@ -1,6 +1,4 @@
-package Homework.Archetypes;
-
-import Homework.Concepts.CharacterAction;
+package Homework.Core.Archetypes;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,6 @@
-package Homework.Classes;
+package Homework.Core.Classes;
 
-import Homework.Archetypes.Melee;
-import Homework.Concepts.CharacterAction;
+import Homework.Core.Archetypes.Melee;
 
 public class Rogue extends Melee  {
     public Rogue(String name, int x, int y){

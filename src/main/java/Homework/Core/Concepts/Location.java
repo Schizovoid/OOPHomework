@@ -1,8 +1,6 @@
-package Homework.Concepts;
+package Homework.Core.Concepts;
 
-import Homework.Archetypes.Character;
-
-import java.util.ArrayList;
+import Homework.Core.Archetypes.Character;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;

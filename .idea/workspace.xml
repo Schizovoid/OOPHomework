@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Searching pattern for melee characters">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Ranged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Peasant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Sniper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/CharacterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/CharacterAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Names.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Teams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +78,11 @@
       </method>
     </configuration>
     <configuration name="hm2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework.LessonsTasks.hm2" />
+      <option name="MAIN_CLASS_NAME" value="Homework.PreviousLessonsTasks.hm2" />
       <module name="OOPHomework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Homework.LessonsTasks.*" />
+          <option name="PATTERN" value="Homework.PreviousLessonsTasks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,11 +91,11 @@
       </method>
     </configuration>
     <configuration name="hm3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework.LessonsTasks.hm3" />
+      <option name="MAIN_CLASS_NAME" value="Homework.PreviousLessonsTasks.hm3" />
       <module name="OOPHomework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Homework.LessonsTasks.*" />
+          <option name="PATTERN" value="Homework.PreviousLessonsTasks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,11 +104,11 @@
       </method>
     </configuration>
     <configuration name="hm4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework.LessonsTasks.hm4" />
+      <option name="MAIN_CLASS_NAME" value="Homework.PreviousLessonsTasks.hm4" />
       <module name="OOPHomework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Homework.LessonsTasks.*" />
+          <option name="PATTERN" value="Homework.PreviousLessonsTasks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

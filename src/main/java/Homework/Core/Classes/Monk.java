@@ -1,7 +1,6 @@
-package Homework.Classes;
+package Homework.Core.Classes;
 
-import Homework.Archetypes.Mage;
-import Homework.Concepts.CharacterAction;
+import Homework.Core.Archetypes.Mage;
 
 public class Monk extends Mage  {
     public Monk(String name, int x, int y){

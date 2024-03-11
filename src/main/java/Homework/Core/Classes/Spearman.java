@@ -1,7 +1,6 @@
-package Homework.Classes;
+package Homework.Core.Classes;
 
-import Homework.Archetypes.Melee;
-import Homework.Concepts.CharacterAction;
+import Homework.Core.Archetypes.Melee;
 
 public class Spearman extends Melee {
     public Spearman(String name, int x, int y){

@@ -1,7 +1,6 @@
-package Homework.Archetypes;
+package Homework.Core.Archetypes;
 
-import Homework.Concepts.CharacterAction;
-import Homework.Concepts.Location;
+import Homework.Core.Concepts.Location;
 
 import java.util.ArrayList;
 import java.util.ListIterator;
