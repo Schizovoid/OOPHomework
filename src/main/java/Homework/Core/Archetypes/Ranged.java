@@ -1,14 +1,33 @@
 package Homework.Core.Archetypes;
 
+import Homework.Core.Concepts.Location;
+
 import java.util.ArrayList;
 
 public abstract class Ranged extends BaseHero {
+    public int getDexterity() {
+        return dexterity;
+    }
+
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
+    }
+
     protected int dexterity;
     protected int maxAmmo;
+
+    public int getAmmo() {
+        return ammo;
+    }
+
+    public void setAmmo(int ammo) {
+        this.ammo = ammo;
+    }
+
     protected int ammo;
 
-    public Ranged(String name, int x, int y){
-        super(name, x, y);
+    public Ranged(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);
     }
 
     @Override

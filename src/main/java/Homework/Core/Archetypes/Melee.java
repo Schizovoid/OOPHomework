@@ -6,13 +6,29 @@ import java.util.ArrayList;
 import java.util.ListIterator;
 
 public abstract class Melee extends BaseHero {
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
     protected int strength;
+
+    public int getStamina() {
+        return stamina;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
+    }
+
     protected int stamina;
     protected int maxStamina;
 
-    public Melee(String name, int x, int y){
-        super(name, x, y);
-    }
+    public Melee(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);}
 
     @Override
     public void step() {
@@ -43,7 +59,7 @@ public abstract class Melee extends BaseHero {
         ListIterator<BaseHero> iter = targetTeam.listIterator();
         while(iter.hasNext()) {
             BaseHero target = iter.next();
-            if (target.isAlive && target.getTeam() != this.getTeam()) {
+            if (target.isAlive && target.getHeroTeam() != this.getHeroTeam()) {
                 if (target.getLocation().getX() - this.getLocation().getX() == -1 |
                         target.getLocation().getX() - this.getLocation().getX() == 1 |
                         target.getLocation().getY() - this.getLocation().getY() == -1 |
@@ -72,7 +88,7 @@ public abstract class Melee extends BaseHero {
         ListIterator<BaseHero> iter = targetTeam.listIterator();
         while(iter.hasNext()) {
             BaseHero target = iter.next();
-            if (target.getTeam() != this.getTeam() && target.isAlive) {
+            if (target.isAlive && target.getHeroTeam() != this.getHeroTeam()) {
                 if (target.getLocation().getX() - this.getLocation().getX() == -1 | target.getLocation().getX() - this.getLocation().getX() == 1 |
                         target.getLocation().getY() - this.getLocation().getY() == -1 | target.getLocation().getY() - this.getLocation().getY() == 1) {
                     setEnemyAdjacent(true);

@@ -1,10 +1,14 @@
 package Homework.Core.Classes;
 
+import Homework.Core.Archetypes.BaseHero;
 import Homework.Core.Archetypes.Mage;
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
 
 public class Monk extends Mage  {
-    public Monk(String name, int x, int y){
-        super(name, x, y);
+    public Monk(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 15;
         this.maxMana = 30;
         this.intelligence = 5;
@@ -14,10 +18,9 @@ public class Monk extends Mage  {
     }
 
 @Override
-    public String toString(){
-        return String.format("This is %s, they are a monk", name);
-    }
-    @Override
+public String toString(){
+    return String.format("%s, HP: %d, Mana: %d, Dmg: %d", getInfo(), getHp(), getMana(), getIntelligence());
+}    @Override
     public String getInfo(){
         return "Monk";
     }

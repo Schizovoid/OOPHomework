@@ -1,10 +1,14 @@
 package Homework.Core.Classes;
 
+import Homework.Core.Archetypes.BaseHero;
 import Homework.Core.Archetypes.Melee;
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
 
 public class Peasant extends Melee  {
-    public Peasant(String name, int x, int y){
-        super(name, x, y);
+    public Peasant(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 30;
         this.maxStamina = 20;
         this.strength = 5;
@@ -15,7 +19,7 @@ public class Peasant extends Melee  {
 
     @Override
     public String toString(){
-        return String.format("This is %s, they are a peasant", name);
+        return String.format("%s, HP: %d, Stamina: %d, Dmg: %d", getInfo(), getHp(), getStamina(), getStrength());
     }
     @Override
     public String getInfo(){

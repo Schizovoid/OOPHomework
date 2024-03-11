@@ -1,17 +1,38 @@
 package Homework.Core.Archetypes;
 
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
+
 public abstract class Mage extends BaseHero {
     protected int maxMana;
+
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+
     protected int mana;
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
+    }
+
     protected int intelligence;
 
-    public Mage(String name, int x, int y){
-        super(name, x, y);
-    }
+    public Mage(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);}
 
     @Override
     public void step() {
-
+        System.out.println(String.format("%s does nothing yet", this.name));
     }
     public void attack(BaseHero target) {
             target.hp = target.hp - this.intelligence;

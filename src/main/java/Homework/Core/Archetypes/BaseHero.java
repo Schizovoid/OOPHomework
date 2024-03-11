@@ -46,19 +46,16 @@ public abstract class BaseHero implements CharacterAction {
     public void setLocation(Location location) {
         this.location = location;
     }
-    protected double[] coords = {this.location.getX(), this.location.getY()};
+
+    protected double[] coords;
     public double[] getCoords() {
         return this.coords;
     }
+    public void setCoords(double[] coords) {
+        this.coords = coords;
+    }
 
     public Location location;
-    public Teams team;
-    public Teams getTeam() {
-        return team;
-    }
-    public void setTeam(Teams team) {
-        this.team = team;
-    }
 
     public ArrayList<BaseHero> getTargetTeam() {
         return targetTeam;
@@ -70,11 +67,24 @@ public abstract class BaseHero implements CharacterAction {
 
     ArrayList<BaseHero> targetTeam;
 
-    public BaseHero(String name, int x, int y){
+    public ArrayList<BaseHero> getHeroTeam() {
+        return heroTeam;
+    }
+
+    public void setHeroTeam(ArrayList<BaseHero> heroTeam) {
+        this.heroTeam = heroTeam;
+    }
+
+    ArrayList<BaseHero> heroTeam;
+
+    public BaseHero(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
         this.name = name;
-        location = new Location(x, y);
+        this.location = new Location(loc.getX(), loc.getY());
         this.location.setOccupant(this);
         this.location.setOccupied(true);
+        this.heroTeam = heroTeam;
+        this.targetTeam = targetTeam;
+        this.coords = new double[]{this.location.getX(), this.location.getY()};
     }
 @Override
     public void step() {
@@ -96,16 +106,18 @@ public abstract class BaseHero implements CharacterAction {
         if (targetLoc.isOccupied()) {
             System.out.println(String.format("%s could not move to this location!", this.getName()));
         } else {
-            setLocation(targetLoc);
+            this.setLocation(targetLoc);
             System.out.println(String.format("%s moves to X: %d , Y: %d", this.getName(), targetLoc.getX(), targetLoc.getY()));
             targetLoc.setOccupied(true);
             targetLoc.setOccupant(this);
+            this.setCoords(new double[]{targetLoc.getX(), targetLoc.getY()});
         }
     }
 
     public void die() {
         this.isAlive = false;
         System.out.println(String.format("%s dies!", this.name));
+        this.getHeroTeam().remove(this);
     }
 
     public String toString(){

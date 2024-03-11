@@ -1,10 +1,14 @@
 package Homework.Core.Classes;
 
+import Homework.Core.Archetypes.BaseHero;
 import Homework.Core.Archetypes.Ranged;
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
 
 public class Bowman extends Ranged {
-    public Bowman(String name, int x, int y){
-        super(name, x, y);
+    public Bowman(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 5;
         this.maxAmmo = 10;
         this.dexterity = 10;
@@ -14,10 +18,9 @@ public class Bowman extends Ranged {
     }
 
 @Override
-    public String toString(){
-        return String.format("This is %s, they are a bowman", name);
-    }
-    @Override
+public String toString(){
+    return String.format("%s, HP: %d, Ammo: %d, Dmg: %d", getInfo(), getHp(), getAmmo(), getDexterity());
+}    @Override
     public String getInfo(){
         return "Bowman";
     }

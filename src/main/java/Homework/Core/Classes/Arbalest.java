@@ -1,10 +1,14 @@
 package Homework.Core.Classes;
 
+import Homework.Core.Archetypes.BaseHero;
 import Homework.Core.Archetypes.Ranged;
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
 
 public class Arbalest extends Ranged  {
-    public Arbalest(String name, int x, int y){
-        super(name, x, y);
+    public Arbalest(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 20;
         this.maxAmmo = 5;
         this.dexterity = 10;
@@ -16,7 +20,7 @@ public class Arbalest extends Ranged  {
 
     @Override
     public String toString(){
-        return String.format("This is %s, they are an arbalest", name);
+        return String.format("%s, HP: %d, Ammo: %d, Dmg: %d", getInfo(), getHp(), getAmmo(), getDexterity());
     }
     @Override
     public String getInfo(){
