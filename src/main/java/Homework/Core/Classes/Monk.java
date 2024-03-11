@@ -8,7 +8,7 @@ public class Monk extends Mage  {
         this.maxHealth = 15;
         this.maxMana = 30;
         this.intelligence = 5;
-        this.health = this.maxHealth;
+        this.hp = this.maxHealth;
         this.mana = this.maxMana;
         this.initiative = 1;
     }
@@ -16,5 +16,9 @@ public class Monk extends Mage  {
 @Override
     public String toString(){
         return String.format("This is %s, they are a monk", name);
+    }
+    @Override
+    public String getInfo(){
+        return "Monk";
     }
 }

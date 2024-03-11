@@ -2,7 +2,7 @@ package Homework.Core.Archetypes;
 
 import java.util.ArrayList;
 
-public abstract class Ranged extends Character {
+public abstract class Ranged extends BaseHero {
     protected int dexterity;
     protected int maxAmmo;
     protected int ammo;
@@ -23,8 +23,8 @@ public abstract class Ranged extends Character {
 
     }
 
-    protected Character searchForTarget(ArrayList<Character> targetTeam){
-        Character target = targetTeam.get(0);
+    protected BaseHero searchForTarget(ArrayList<BaseHero> targetTeam){
+        BaseHero target = targetTeam.get(0);
         double nearest = 100;
         for (int i = 0; i < targetTeam.size(); i++) {
            if (targetTeam.get(i).isAlive && this.location.calculateDistance(targetTeam.get(i).location) <= nearest){
@@ -34,12 +34,12 @@ public abstract class Ranged extends Character {
         }
         return target;
     }
-    public void attackNearest(ArrayList<Character> targetTeam){
-            Character target = searchForTarget(targetTeam);
-            target.health = target.health - this.dexterity;
+    public void attackNearest(ArrayList<BaseHero> targetTeam){
+            BaseHero target = searchForTarget(targetTeam);
+            target.hp = target.hp - this.dexterity;
             this.ammo = this.ammo - 1;
             System.out.println(String.format("%s attacks %s for %d damage!", this.getName(), target.getName(), this.dexterity));
-            if (target.health <= 0){
+            if (target.hp <= 0){
                 target.die();
             }
     }

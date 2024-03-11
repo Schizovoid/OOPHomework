@@ -8,7 +8,7 @@ public class Spearman extends Melee {
         this.maxHealth = 15;
         this.maxStamina = 20;
         this.strength = 10;
-        this.health = this.maxHealth;
+        this.hp = this.maxHealth;
         this.stamina = this.maxStamina;
         this.initiative = 2;
     }
@@ -16,5 +16,9 @@ public class Spearman extends Melee {
     @Override
     public String toString(){
         return String.format("This is %s, they are a spearman", name);
+    }
+    @Override
+    public String getInfo(){
+        return "Spearman";
     }
 }

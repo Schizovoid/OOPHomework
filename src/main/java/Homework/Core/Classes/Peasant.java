@@ -8,7 +8,7 @@ public class Peasant extends Melee  {
         this.maxHealth = 30;
         this.maxStamina = 20;
         this.strength = 5;
-        this.health = this.maxHealth;
+        this.hp = this.maxHealth;
         this.stamina = this.maxStamina;
         this.initiative = 0;
     }
@@ -16,5 +16,9 @@ public class Peasant extends Melee  {
     @Override
     public String toString(){
         return String.format("This is %s, they are a peasant", name);
+    }
+    @Override
+    public String getInfo(){
+        return "Peasant";
     }
 }

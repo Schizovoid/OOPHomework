@@ -8,7 +8,7 @@ public class Arbalest extends Ranged  {
         this.maxHealth = 20;
         this.maxAmmo = 5;
         this.dexterity = 10;
-        this.health = this.maxHealth;
+        this.hp = this.maxHealth;
         this.ammo = this.maxAmmo;
         this.initiative = 3;
     }
@@ -17,5 +17,9 @@ public class Arbalest extends Ranged  {
     @Override
     public String toString(){
         return String.format("This is %s, they are an arbalest", name);
+    }
+    @Override
+    public String getInfo(){
+        return "Arbalest";
     }
 }

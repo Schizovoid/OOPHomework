@@ -6,7 +6,7 @@ import Homework.Core.Concepts.Teams;
 
 import java.util.ArrayList;
 
-public abstract class Character implements CharacterAction {
+public abstract class BaseHero implements CharacterAction {
     public String getName() {
         return name;
     }
@@ -23,7 +23,15 @@ public abstract class Character implements CharacterAction {
 
 
     protected int maxHealth;
-    protected int health;
+    protected int hp;
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
 
     public int getInitiative() {
         return initiative;
@@ -38,6 +46,10 @@ public abstract class Character implements CharacterAction {
     public void setLocation(Location location) {
         this.location = location;
     }
+    protected double[] coords = {this.location.getX(), this.location.getY()};
+    public double[] getCoords() {
+        return this.coords;
+    }
 
     public Location location;
     public Teams team;
@@ -48,17 +60,17 @@ public abstract class Character implements CharacterAction {
         this.team = team;
     }
 
-    public ArrayList<Character> getTargetTeam() {
+    public ArrayList<BaseHero> getTargetTeam() {
         return targetTeam;
     }
 
-    public void setTargetTeam(ArrayList<Character> targetTeam) {
+    public void setTargetTeam(ArrayList<BaseHero> targetTeam) {
         this.targetTeam = targetTeam;
     }
 
-    ArrayList<Character> targetTeam;
+    ArrayList<BaseHero> targetTeam;
 
-    public Character(String name, int x, int y){
+    public BaseHero(String name, int x, int y){
         this.name = name;
         location = new Location(x, y);
         this.location.setOccupant(this);
@@ -69,14 +81,17 @@ public abstract class Character implements CharacterAction {
         System.out.println(String.format("%s doesn't know what to do yet.", this.getName()));
     }
 
-    public void attack (Character target){
+    public void attack (BaseHero target){
     }
 
     public void rest (){
     }
 
-    public void heal (Character target){
+    public void heal (BaseHero target){
     }
+    public String getInfo(){
+        return "Base Hero";
+    };
     public void move (Location targetLoc){
         if (targetLoc.isOccupied()) {
             System.out.println(String.format("%s could not move to this location!", this.getName()));

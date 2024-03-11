@@ -1,6 +1,6 @@
 package Homework.Core.Concepts;
 
-import Homework.Core.Archetypes.Character;
+import Homework.Core.Archetypes.BaseHero;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
@@ -36,12 +36,12 @@ public class Location {
 
     int Y;
 
-    Character occupant;
-    public Character getOccupant() {
+    BaseHero occupant;
+    public BaseHero getOccupant() {
         return occupant;
     }
 
-    public void setOccupant(Character occupant) {
+    public void setOccupant(BaseHero occupant) {
         this.occupant = occupant;
     }
 

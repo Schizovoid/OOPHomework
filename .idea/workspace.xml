@@ -4,26 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Searching pattern for melee characters">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Ranged.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Peasant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Sniper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/CharacterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/CharacterAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Names.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Concepts/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Teams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm4.java" afterDir="false" />
+    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Old homework mains archived">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/BaseHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Ranged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Peasant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Bowman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Teams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Viewer/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Viewer/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1709827319110</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="New classes added, structure changed">
+      <created>1710157613483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710157613483</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Old homework mains archived">
+      <created>1710161576176</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710161576176</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +200,8 @@
     <MESSAGE value="Step added, Ranged characters changed" />
     <MESSAGE value="Melee characters search and attack patterns added" />
     <MESSAGE value="Searching pattern for melee characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Searching pattern for melee characters" />
+    <MESSAGE value="New classes added, structure changed" />
+    <MESSAGE value="Old homework mains archived" />
+    <option name="LAST_COMMIT_MESSAGE" value="Old homework mains archived" />
   </component>
 </project>

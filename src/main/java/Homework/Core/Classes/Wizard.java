@@ -9,7 +9,7 @@ public class Wizard extends Mage  {
         this.maxHealth = 10;
         this.maxMana = 20;
         this.intelligence = 10;
-        this.health = this.maxHealth;
+        this.hp = this.maxHealth;
         this.mana = this.maxMana;
         this.initiative = 1;
     }
@@ -17,5 +17,9 @@ public class Wizard extends Mage  {
     @Override
     public String toString(){
         return String.format("This is %s, they are a wizard", name);
+    }
+    @Override
+    public String getInfo(){
+        return "Wizard";
     }
 }

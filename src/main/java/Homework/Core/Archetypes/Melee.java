@@ -5,7 +5,7 @@ import Homework.Core.Concepts.Location;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
-public abstract class Melee extends Character {
+public abstract class Melee extends BaseHero {
     protected int strength;
     protected int stamina;
     protected int maxStamina;
@@ -28,21 +28,21 @@ public abstract class Melee extends Character {
         }
     }
 
-    public void attack (Character target){
-            target.health = target.health - this.strength;
+    public void attack (BaseHero target){
+            target.hp = target.hp - this.strength;
             this.stamina = this.stamina - this.strength;
         System.out.println(String.format("%s attacks %s for %d damage!", this.getName(), target.getName(), this.strength));
-            if (target.health <= 0){
+            if (target.hp <= 0){
                 target.die();
                 System.out.println(String.format("%s dies!", target.name));
             }
     }
 
 
-    protected void attackAdjacent(ArrayList<Character> targetTeam){
-        ListIterator<Character> iter = targetTeam.listIterator();
+    protected void attackAdjacent(ArrayList<BaseHero> targetTeam){
+        ListIterator<BaseHero> iter = targetTeam.listIterator();
         while(iter.hasNext()) {
-            Character target = iter.next();
+            BaseHero target = iter.next();
             if (target.isAlive && target.getTeam() != this.getTeam()) {
                 if (target.getLocation().getX() - this.getLocation().getX() == -1 |
                         target.getLocation().getX() - this.getLocation().getX() == 1 |
@@ -68,10 +68,10 @@ public abstract class Melee extends Character {
         }
     }
 
-    protected void searchAdjacent(ArrayList<Character> targetTeam){
-        ListIterator<Character> iter = targetTeam.listIterator();
+    protected void searchAdjacent(ArrayList<BaseHero> targetTeam){
+        ListIterator<BaseHero> iter = targetTeam.listIterator();
         while(iter.hasNext()) {
-            Character target = iter.next();
+            BaseHero target = iter.next();
             if (target.getTeam() != this.getTeam() && target.isAlive) {
                 if (target.getLocation().getX() - this.getLocation().getX() == -1 | target.getLocation().getX() - this.getLocation().getX() == 1 |
                         target.getLocation().getY() - this.getLocation().getY() == -1 | target.getLocation().getY() - this.getLocation().getY() == 1) {
@@ -81,7 +81,7 @@ public abstract class Melee extends Character {
         }
     }
 
-    protected void moveTowardTarget(Character target){
+    protected void moveTowardTarget(BaseHero target){
     if (Math.abs(target.getLocation().getX() - this.location.getX()) < Math.abs(target.getLocation().getY() - this.location.getY())){
         if (this.location.getX() > target.getLocation().getX()) {
             this.move(new Location(this.location.getX() -1, this.getLocation().getY()));
@@ -96,8 +96,8 @@ public abstract class Melee extends Character {
         }
     }
     }
-    protected Character searchForTarget(ArrayList<Character> targetTeam){
-        Character target = targetTeam.get(0);
+    protected BaseHero searchForTarget(ArrayList<BaseHero> targetTeam){
+        BaseHero target = targetTeam.get(0);
         double nearest = 100;
         for (int i = 0; i < targetTeam.size(); i++) {
             if (this.location.calculateDistance(targetTeam.get(i).location) <= nearest & targetTeam.get(i).isAlive){

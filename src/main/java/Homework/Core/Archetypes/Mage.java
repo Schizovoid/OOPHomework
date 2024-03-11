@@ -1,6 +1,6 @@
 package Homework.Core.Archetypes;
 
-public abstract class Mage extends Character {
+public abstract class Mage extends BaseHero {
     protected int maxMana;
     protected int mana;
     protected int intelligence;
@@ -13,10 +13,10 @@ public abstract class Mage extends Character {
     public void step() {
 
     }
-    public void attack(Character target) {
-            target.health = target.health - this.intelligence;
+    public void attack(BaseHero target) {
+            target.hp = target.hp - this.intelligence;
             this.mana = this.mana - this.intelligence;
-            if (target.health <= 0) {
+            if (target.hp <= 0) {
                 target.die();
                 System.out.println(String.format("%s dies!", target.name));
             }
@@ -31,9 +31,9 @@ public abstract class Mage extends Character {
         }
     }
 
-    public void heal(Character target) {
+    public void heal(BaseHero target) {
         if (this.mana > 4 && this.isAlive && target.isAlive) {
-            target.health = target.health + this.intelligence;
+            target.hp = target.hp + this.intelligence;
             this.mana = this.mana - this.intelligence;
         } else {
             System.out.println("This character could not perform this action.");
