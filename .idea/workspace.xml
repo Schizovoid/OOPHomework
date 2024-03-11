@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Melee characters search and attack patterns added">
+    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Searching pattern for melee characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/LessonsTasks/hm4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Archetypes/Ranged.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709820512694</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Searching pattern for melee characters">
+      <created>1709827319110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709827319110</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +173,7 @@
     <MESSAGE value="Homework done" />
     <MESSAGE value="Step added, Ranged characters changed" />
     <MESSAGE value="Melee characters search and attack patterns added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Melee characters search and attack patterns added" />
+    <MESSAGE value="Searching pattern for melee characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Searching pattern for melee characters" />
   </component>
 </project>

@@ -44,7 +44,7 @@ public abstract class Melee extends Character {
         ListIterator<Character> iter = targetTeam.listIterator();
         while(iter.hasNext()) {
             Character target = iter.next();
-            if (target.getTeam() != this.getTeam()) {
+            if (target.isAlive && target.getTeam() != this.getTeam()) {
                 if (target.getLocation().getX() - this.getLocation().getX() == -1 |
                         target.getLocation().getX() - this.getLocation().getX() == 1 |
                         target.getLocation().getY() - this.getLocation().getY() == -1 |

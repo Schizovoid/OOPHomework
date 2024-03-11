@@ -29,7 +29,7 @@ public abstract class Ranged extends Character {
         Character target = targetTeam.get(0);
         double nearest = 100;
         for (int i = 0; i < targetTeam.size(); i++) {
-           if (this.location.calculateDistance(targetTeam.get(i).location) <= nearest & targetTeam.get(i).isAlive){
+           if (targetTeam.get(i).isAlive && this.location.calculateDistance(targetTeam.get(i).location) <= nearest){
                nearest = this.location.calculateDistance(targetTeam.get(i).location);
                target = targetTeam.get(i);
            }
