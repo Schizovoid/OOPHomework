@@ -1,5 +1,5 @@
 package Homework.PreviousLessonsTasks;
-import Homework.Core.Archetypes.Character;
+import Homework.Core.Archetypes.BaseHero;
 import Homework.Classes.*;
 import Homework.Core.Classes.*;
 import Homework.Core.Concepts.Names;
@@ -10,11 +10,11 @@ import java.util.Random;
 
 public class hm2 {
     public static void main(String[] args) {
-        ArrayList <Character> teamRed = new ArrayList<>();
-        ArrayList <Character> teamBlue = new ArrayList<>();
-        teamRed.add(generateCharacter(Teams.RED, 7, 7));
-        teamRed.add(generateCharacter(Teams.RED, 3, 5));
-        Sniper anton = new Sniper("Anton", 1,5);
+        ArrayList <BaseHero> teamRed = new ArrayList<>();
+        ArrayList <BaseHero> teamBlue = new ArrayList<>();
+        teamRed.add(generateCharacter(Teams.GREEN, 7, 7));
+        teamRed.add(generateCharacter(Teams.GREEN, 3, 5));
+        Bowman anton = new Bowman("Anton", 1,5);
         teamBlue.add(anton);
         anton.attackNearest(teamRed);
         anton.attackNearest(teamRed);
@@ -30,37 +30,37 @@ public class hm2 {
     }
 
 
-    public static Character generateCharacter(Teams team, int x, int y){
-        Character character;
+    public static BaseHero generateCharacter(Teams team, int x, int y){
+        BaseHero baseHero;
         switch (new Random().nextInt(0,6)){
             case (0):
-                character = new Arbalest(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Arbalest(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             case (1):
-                character = new Monk(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Monk(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             case (2):
-                character = new Peasant(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Peasant(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             case (3):
-                character = new Rogue(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Rogue(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             case (4):
-                character = new Sniper(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Bowman(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             case (5):
-                character = new Spearman(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Spearman(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             case (6):
-                character = new Wizard(generateName(), x,y);
-                character.setTeam(team);
-                return character;
+                baseHero = new Wizard(generateName(), x,y);
+                baseHero.setTeam(team);
+                return baseHero;
             default:
                 return null;
         }
