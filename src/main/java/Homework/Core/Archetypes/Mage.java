@@ -1,6 +1,4 @@
-package Homework.Archetypes;
-
-import Homework.Concepts.CharacterAction;
+package Homework.Core.Archetypes;
 
 public abstract class Mage extends Character {
     protected int maxMana;

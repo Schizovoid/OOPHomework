@@ -1,7 +1,6 @@
-package Homework.Classes;
+package Homework.Core.Classes;
 
-import Homework.Archetypes.Ranged;
-import Homework.Concepts.CharacterAction;
+import Homework.Core.Archetypes.Ranged;
 
 public class Sniper extends Ranged {
     public Sniper(String name, int x, int y){

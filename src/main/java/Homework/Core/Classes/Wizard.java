@@ -1,7 +1,6 @@
-package Homework.Classes;
+package Homework.Core.Classes;
 
-import Homework.Archetypes.Mage;
-import Homework.Concepts.CharacterAction;
+import Homework.Core.Archetypes.Mage;
 
 public class Wizard extends Mage  {
 

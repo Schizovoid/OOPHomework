@@ -1,11 +1,10 @@
-package Homework.Archetypes;
+package Homework.Core.Archetypes;
 
-import Homework.Concepts.CharacterAction;
-import Homework.Concepts.Location;
-import Homework.Concepts.Teams;
+import Homework.Core.Concepts.CharacterAction;
+import Homework.Core.Concepts.Location;
+import Homework.Core.Concepts.Teams;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 public abstract class Character implements CharacterAction {
     public String getName() {

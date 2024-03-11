@@ -1,29 +1,30 @@
-package Homework.LessonsTasks;
+package Homework.PreviousLessonsTasks;
 
-import Homework.Archetypes.Character;
+import Homework.Core.Archetypes.Character;
 import Homework.Classes.*;
-import Homework.Concepts.Names;
-import Homework.Concepts.Teams;
+import Homework.Core.Classes.*;
+import Homework.Core.Concepts.Names;
+import Homework.Core.Concepts.Teams;
 
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Random;
 
-public class hm4 {
+public class hm3 {
+
     public static void main(String[] args) {
         ArrayList <Character> teamRed = new ArrayList<>();
         ArrayList <Character> teamBlue = new ArrayList<>();
         teamRed.add(generateCharacter(Teams.RED, teamBlue, 7, 7));
-        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 2, 4));
+        teamRed.add(generateCharacter(Teams.RED, teamBlue, 8, 5));
+        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 2, 5));
+        teamBlue.add(generateCharacter(Teams.BLUE, teamRed, 3, 4));
         System.out.println(teamRed.get(0).toString());
         System.out.println(teamBlue.get(0).toString());
-        startTurn(teamRed, teamBlue);
-        startTurn(teamRed, teamBlue);
-        startTurn(teamRed, teamBlue);
-        startTurn(teamRed, teamBlue);
+        System.out.println(teamRed.get(1).toString());
+        System.out.println(teamBlue.get(1).toString());
         startTurn(teamRed, teamBlue);
     }
-
 
     public static void startTurn(ArrayList<Character> team1, ArrayList<Character> team2){
         for (int i = 3; i >= 0; i--) {
@@ -94,4 +95,5 @@ public class hm4 {
         Names[] names = Names.values();
         return names[new Random().nextInt(names.length)].toString();
     }
+
 }

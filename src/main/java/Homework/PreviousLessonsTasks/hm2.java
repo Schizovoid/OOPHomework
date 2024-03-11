@@ -1,9 +1,9 @@
-package Homework.LessonsTasks;
-import Homework.Archetypes.Character;
-import Homework.Archetypes.Mage;
+package Homework.PreviousLessonsTasks;
+import Homework.Core.Archetypes.Character;
 import Homework.Classes.*;
-import Homework.Concepts.Names;
-import Homework.Concepts.Teams;
+import Homework.Core.Classes.*;
+import Homework.Core.Concepts.Names;
+import Homework.Core.Concepts.Teams;
 
 import java.util.ArrayList;
 import java.util.Random;
