@@ -1,22 +1,43 @@
 package Homework.Core.Archetypes;
 
-public abstract class Mage extends Character {
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
+
+public abstract class Mage extends BaseHero {
     protected int maxMana;
+
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+
     protected int mana;
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
+    }
+
     protected int intelligence;
 
-    public Mage(String name, int x, int y){
-        super(name, x, y);
-    }
+    public Mage(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);}
 
     @Override
     public void step() {
-
+        System.out.println(String.format("%s does nothing yet", this.name));
     }
-    public void attack(Character target) {
-            target.health = target.health - this.intelligence;
+    public void attack(BaseHero target) {
+            target.hp = target.hp - this.intelligence;
             this.mana = this.mana - this.intelligence;
-            if (target.health <= 0) {
+            if (target.hp <= 0) {
                 target.die();
                 System.out.println(String.format("%s dies!", target.name));
             }
@@ -31,9 +52,9 @@ public abstract class Mage extends Character {
         }
     }
 
-    public void heal(Character target) {
+    public void heal(BaseHero target) {
         if (this.mana > 4 && this.isAlive && target.isAlive) {
-            target.health = target.health + this.intelligence;
+            target.hp = target.hp + this.intelligence;
             this.mana = this.mana - this.intelligence;
         } else {
             System.out.println("This character could not perform this action.");

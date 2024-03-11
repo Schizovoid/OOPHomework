@@ -1,21 +1,30 @@
 package Homework.Core.Classes;
 
+import Homework.Core.Archetypes.BaseHero;
 import Homework.Core.Archetypes.Mage;
+import Homework.Core.Concepts.Location;
+
+import java.util.ArrayList;
 
 public class Wizard extends Mage  {
 
-    public Wizard(String name, int x, int y){
-        super(name, x, y);
+    public Wizard(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
+        super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 10;
         this.maxMana = 20;
         this.intelligence = 10;
-        this.health = this.maxHealth;
+        this.hp = this.maxHealth;
         this.mana = this.maxMana;
         this.initiative = 1;
     }
 
     @Override
     public String toString(){
-        return String.format("This is %s, they are a wizard", name);
+        return String.format("%s, HP: %d, Mana: %d, Dmg: %d", getInfo(), getHp(), getMana(), getIntelligence());
+
+    }
+    @Override
+    public String getInfo(){
+        return "Wizard";
     }
 }

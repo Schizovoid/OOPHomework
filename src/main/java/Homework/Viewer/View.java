@@ -1,5 +1,7 @@
 package Homework.Viewer;
-import Homework.Core.Archetypes.Character;
+import Homework.Core.Archetypes.BaseHero;
+import Homework.Main;
+
 import java.util.Collections;
 public class View {
     private static int step = 1;
@@ -31,8 +33,8 @@ public class View {
                     out = "|" + (AnsiColors.ANSI_RED + human.getInfo().charAt(0) + AnsiColors.ANSI_RESET);
                     break;
                 }
-                if (Main.darkTeam.contains(human)) out = "|" + (AnsiColors.ANSI_GREEN + human.getInfo().charAt(0) + AnsiColors.ANSI_RESET);
-                if (Main.holyTeam.contains(human)) out = "|" + (AnsiColors.ANSI_BLUE + human.getInfo().charAt(0) + AnsiColors.ANSI_RESET);
+                if (Main.greenTeam.contains(human)) out = "|" + (AnsiColors.ANSI_GREEN + human.getInfo().charAt(0) + AnsiColors.ANSI_RESET);
+                if (Main.blueTeam.contains(human)) out = "|" + (AnsiColors.ANSI_BLUE + human.getInfo().charAt(0) + AnsiColors.ANSI_RESET);
                 break;
             }
         }
@@ -57,9 +59,9 @@ public class View {
             System.out.print(getChar(1, i));
         }
         System.out.print("|    ");
-        System.out.print(Main.holyTeam.get(0));
-        tabSetter(Main.holyTeam.get(0).toString().length(), l[0]);
-        System.out.println(Main.darkTeam.get(0));
+        System.out.print(Main.blueTeam.get(0));
+        tabSetter(Main.blueTeam.get(0).toString().length(), l[0]);
+        System.out.println(Main.greenTeam.get(0));
         System.out.println(midl10);
 
         for (int i = 2; i < 10; i++) {
@@ -67,18 +69,18 @@ public class View {
                 System.out.print(getChar(i, j));
             }
             System.out.print("|    ");
-            System.out.print(Main.holyTeam.get(i-1));
-            tabSetter(Main.holyTeam.get(i-1).toString().length(), l[0]);
-            System.out.println(Main.darkTeam.get(i-1));
+            System.out.print(Main.blueTeam.get(i-1));
+            tabSetter(Main.blueTeam.get(i-1).toString().length(), l[0]);
+            System.out.println(Main.greenTeam.get(i-1));
             System.out.println(midl10);
         }
         for (int j = 1; j < 11; j++) {
             System.out.print(getChar(10, j));
         }
         System.out.print("|    ");
-        System.out.print(Main.holyTeam.get(9));
-        tabSetter(Main.holyTeam.get(9).toString().length(), l[0]);
-        System.out.println(Main.darkTeam.get(9));
+        System.out.print(Main.blueTeam.get(9));
+        tabSetter(Main.blueTeam.get(9).toString().length(), l[0]);
+        System.out.println(Main.greenTeam.get(9));
         System.out.println(bottom10);
     }
 }
