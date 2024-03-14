@@ -34,8 +34,10 @@ public class Main {
             }
         }
         if(winnerTeam.equals(greenTeam)){
+            View.view();
             System.out.println("Green team wins!");
         } else if (winnerTeam.equals(blueTeam)) {
+            View.view();
             System.out.println("Blue team wins!");
         }
     }

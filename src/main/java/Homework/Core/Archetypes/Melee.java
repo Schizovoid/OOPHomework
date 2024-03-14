@@ -62,13 +62,13 @@ public abstract class Melee extends BaseHero {
         }
 
     protected void moveTowardTarget(BaseHero target){
-    if (Math.abs(target.getLocation().getX() - this.location.getX()) < Math.abs(target.getLocation().getY() - this.location.getY())){
+    if (Math.abs(target.getLocation().getX() - this.location.getX()) > Math.abs(target.getLocation().getY() - this.location.getY())){
         if (this.location.getX() > target.getLocation().getX()) {
             this.move(new Location(this.location.getX() -1, this.getLocation().getY()));
         } else if (this.location.getX() < target.getLocation().getX()) {
             this.move(new Location(this.location.getX() + 1, this.getLocation().getY()));
         }
-    } else if (Math.abs(target.getLocation().getX() - this.location.getX()) > Math.abs(target.getLocation().getY() - this.location.getY())) {
+    } else if (Math.abs(target.getLocation().getX() - this.location.getX()) < Math.abs(target.getLocation().getY() - this.location.getY())) {
         if (this.location.getY() > target.getLocation().getY()) {
             this.move(new Location(this.location.getX(), this.getLocation().getY() - 1));
         } else if (this.location.getY() < target.getLocation().getY()) {

@@ -19,7 +19,7 @@ public class Monk extends Mage  {
 
 @Override
 public String toString(){
-    return String.format("%s, HP: %d, Mana: %d, Dmg: %d", getInfo(), getHp(), getMana(), getIntelligence());
+    return String.format("%s, HP: %d, Mana: %d, Dmg: %d, X: %d, Y: %d", getInfo(), getHp(), getMana(), getIntelligence(), this.location.getX(), this.location.getY());
 }    @Override
     public String getInfo(){
         return "Monk";
