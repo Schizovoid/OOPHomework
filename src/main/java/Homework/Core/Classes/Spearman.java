@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Spearman extends Melee {
     public Spearman(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
         super(name, loc, heroTeam, targetTeam);
-        this.maxHealth = 15;
+        this.maxHealth = 20;
         this.maxStamina = 20;
         this.strength = 10;
         this.hp = this.maxHealth;

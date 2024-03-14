@@ -10,7 +10,7 @@ public class Arbalest extends Ranged  {
     public Arbalest(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
         super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 20;
-        this.maxAmmo = 5;
+        this.maxAmmo = 3;
         this.dexterity = 10;
         this.hp = this.maxHealth;
         this.ammo = this.maxAmmo;

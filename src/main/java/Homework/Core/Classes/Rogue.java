@@ -11,7 +11,7 @@ public class Rogue extends Melee  {
         super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 10;
         this.maxStamina = 30;
-        this.strength = 10;
+        this.strength = 15;
         this.hp = this.maxHealth;
         this.stamina = this.maxStamina;
         this.initiative = 2;

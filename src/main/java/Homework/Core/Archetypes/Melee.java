@@ -32,7 +32,6 @@ public abstract class Melee extends BaseHero {
     @Override
     public void step() {
         if (this.isAlive && this.stamina >= this.strength){
-            enemyAdjacent(searchForTarget(targetTeam));
             if (enemyAdjacent(searchForTarget(targetTeam))) {
                 attack(searchForTarget(targetTeam));
             } else {

@@ -10,7 +10,7 @@ public class Bowman extends Ranged {
     public Bowman(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
         super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 5;
-        this.maxAmmo = 10;
+        this.maxAmmo = 5;
         this.dexterity = 10;
         this.hp = this.maxHealth;
         this.ammo = this.maxAmmo;
