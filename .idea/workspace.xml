@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Existing classes changed&#10;View class changed to fit existing classes">
+    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Mellee targeting enhanced">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/BaseHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/BaseHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Ranged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Ranged.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Bowman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Bowman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Peasant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/PreviousLessonsTasks/hm4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +190,28 @@
       <option name="project" value="LOCAL" />
       <updated>1710161827268</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="done">
+      <created>1710173813042</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710173813042</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Visual issue partially fixed">
+      <created>1710174704461</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710174704461</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Mellee targeting enhanced">
+      <created>1710176308672</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710176308672</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +234,9 @@
     <MESSAGE value="New classes added, structure changed" />
     <MESSAGE value="Old homework mains archived" />
     <MESSAGE value="Existing classes changed&#10;View class changed to fit existing classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Existing classes changed&#10;View class changed to fit existing classes" />
+    <MESSAGE value="done" />
+    <MESSAGE value="Visual issue partially fixed" />
+    <MESSAGE value="Mellee targeting enhanced" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mellee targeting enhanced" />
   </component>
 </project>
