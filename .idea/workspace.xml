@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Winner conditions reworked">
+    <list default="true" id="c63f5086-89e1-4bec-991b-3b1b48847db1" name="Changes" comment="Searching pattern for melee characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Melee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/BaseHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/BaseHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Archetypes/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Arbalest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Bowman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Bowman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Monk.java" afterDir="false" />
@@ -14,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Rogue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Spearman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Classes/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework/Core/Concepts/Names.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +48,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Homework.Main">
     <configuration name="Homework.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework.Main" />

@@ -32,7 +32,11 @@ public abstract class Mage extends BaseHero {
 
     @Override
     public void step() {
-        System.out.println(String.format("%s does nothing yet", this.name));
+        if (this.getMana() >= 2){
+            checkWounded(this.getHeroTeam());
+        } else {
+            rest();
+        }
     }
     public void attack(BaseHero target) {
             target.hp = target.hp - this.intelligence;
@@ -45,19 +49,67 @@ public abstract class Mage extends BaseHero {
 
     public void rest() {
         if (this.isAlive) {
-            this.mana = maxMana;
+            this.mana++;
             System.out.println(String.format("%s rests!", this.name));
-        } else {
-            System.out.println("This character could not perform this action.");
         }
     }
 
     public void heal(BaseHero target) {
-        if (this.mana > 4 && this.isAlive && target.isAlive) {
-            target.hp = target.hp + this.intelligence;
-            this.mana = this.mana - this.intelligence;
+        if(target.getHp() + this.intelligence > target.getMaxHealth()){
+            target.setHp(target.getMaxHealth());
         } else {
-            System.out.println("This character could not perform this action.");
+            target.hp = target.hp + this.intelligence;
+            this.mana = this.mana - 2;
+            System.out.println(String.format("%s heals %s!", this.getName(), target.getName()));
+            }
         }
+    public void resurrect (BaseHero target){
+        this.setMana(this.getMana() - 10);
+        target.setAlive(true);
+        target.setHp(target.getMaxHealth());
+        System.out.println(String.format("%s brings %s back to life!", this.getName(), target.getName()));
+    }
+    public void checkWounded (ArrayList<BaseHero> heroTeam){
+        if (this.getMana() >= 10) {
+            int deadAllies = 0;
+            for (BaseHero human : heroTeam){
+                if (!human.isAlive()){
+                    deadAllies++;
+                }
+            }
+            if (deadAllies >= 3){
+                resurrect(searchForDeadAlly(this.getHeroTeam()));
+            } else {
+                healClosest(this.getHeroTeam());
+            }
+        } else {
+            healClosest(this.getHeroTeam());
+        }
+    }
+
+    protected void healClosest(ArrayList<BaseHero> targetTeam){
+        BaseHero target = null;
+        double nearest = 100;
+        for (BaseHero human : targetTeam) {
+            if (human.isAlive && human.getHp() < human.getMaxHealth() & this.location.calculateDistance(human.location) <= nearest){
+                nearest = this.location.calculateDistance(human.location);
+                target = human;
+            }
+        } if(target != null) {
+            heal(target);
+        } else {
+            rest();
+        }
+    }
+    protected BaseHero searchForDeadAlly(ArrayList<BaseHero> targetTeam){
+        BaseHero target = targetTeam.get(0);
+        double nearest = 100;
+        for (BaseHero human : targetTeam) {
+            if (!human.isAlive && this.location.calculateDistance(human.location) <= nearest) {
+                nearest = this.location.calculateDistance(human.location);
+                target = human;
+            }
+        }
+        return target;
     }
 }

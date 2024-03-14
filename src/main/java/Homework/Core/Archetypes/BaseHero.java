@@ -16,13 +16,14 @@ public abstract class BaseHero implements CharacterAction {
     public boolean isAlive() {
         return isAlive;
     }
-
-    public void setAlive(boolean alive) {
-        isAlive = alive;
+    public void setAlive(boolean isAlive) {
+        this.isAlive = isAlive;
     }
-
     protected boolean isAlive = true;
 
+    public int getMaxHealth() {
+        return maxHealth;
+    }
 
     protected int maxHealth;
     protected int hp;

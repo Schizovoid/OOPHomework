@@ -19,7 +19,7 @@ public class Bowman extends Ranged {
 
 @Override
 public String toString(){
-    return String.format("%s, HP: %d, Ammo: %d, Dmg: %d, X: %d, Y:%d", getInfo(), getHp(), getAmmo(), getDexterity(), this.location.getX(), this.location.getY());
+    return String.format("%s, %s, HP: %d, Ammo: %d, Dmg: %d, X: %d, Y:%d", getName(), getInfo(), getHp(), getAmmo(), getDexterity(), this.location.getX(), this.location.getY());
 }    @Override
     public String getInfo(){
         return "Bowman";
