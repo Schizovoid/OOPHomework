@@ -11,7 +11,7 @@ public class Rogue extends Melee  {
         super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 10;
         this.maxStamina = 30;
-        this.strength = 10;
+        this.strength = 15;
         this.hp = this.maxHealth;
         this.stamina = this.maxStamina;
         this.initiative = 2;
@@ -19,7 +19,7 @@ public class Rogue extends Melee  {
 
     @Override
     public String toString(){
-        return String.format("%s, HP: %d, Stamina: %d, Dmg: %d, X: %d, Y: %d", getInfo(), getHp(), getStamina(), getStrength(), this.location.getX(), this.location.getY());
+        return String.format("%s, %s, HP: %d, Stamina: %d, Dmg: %d, X: %d, Y: %d", getName(), getInfo(), getHp(), getStamina(), getStrength(), this.location.getX(), this.location.getY());
     }
     @Override
     public String getInfo(){

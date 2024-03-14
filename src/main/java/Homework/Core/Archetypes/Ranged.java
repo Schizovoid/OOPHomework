@@ -14,6 +14,11 @@ public abstract class Ranged extends BaseHero {
     }
 
     protected int dexterity;
+
+    public int getMaxAmmo() {
+        return maxAmmo;
+    }
+
     protected int maxAmmo;
 
     public int getAmmo() {
@@ -63,12 +68,4 @@ public abstract class Ranged extends BaseHero {
             }
     }
 
-    public void rest() {
-        if (this.isAlive) {
-            this.ammo = maxAmmo;
-            System.out.println(String.format("%s rests!", this.name));
-        } else {
-            System.out.println("This character could not perform this action.");
-        }
-    }
 }

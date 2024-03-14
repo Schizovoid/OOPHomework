@@ -10,7 +10,7 @@ public class Bowman extends Ranged {
     public Bowman(String name, Location loc, ArrayList<BaseHero> heroTeam, ArrayList<BaseHero> targetTeam){
         super(name, loc, heroTeam, targetTeam);
         this.maxHealth = 5;
-        this.maxAmmo = 10;
+        this.maxAmmo = 5;
         this.dexterity = 10;
         this.hp = this.maxHealth;
         this.ammo = this.maxAmmo;
@@ -19,7 +19,7 @@ public class Bowman extends Ranged {
 
 @Override
 public String toString(){
-    return String.format("%s, HP: %d, Ammo: %d, Dmg: %d, X: %d, Y:%d", getInfo(), getHp(), getAmmo(), getDexterity(), this.location.getX(), this.location.getY());
+    return String.format("%s, %s, HP: %d, Ammo: %d, Dmg: %d, X: %d, Y:%d", getName(), getInfo(), getHp(), getAmmo(), getDexterity(), this.location.getX(), this.location.getY());
 }    @Override
     public String getInfo(){
         return "Bowman";
