@@ -12,14 +12,16 @@ public abstract class BaseHero implements CharacterAction {
     }
 
     protected String name;
+
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public void setAlive(boolean alive) {
+        isAlive = alive;
+    }
+
     protected boolean isAlive = true;
-    protected boolean enemyAdjacent;
-    public boolean isEnemyAdjacent() {
-        return enemyAdjacent;
-    }
-    public void setEnemyAdjacent(boolean enemyAdjacent){
-        this.enemyAdjacent = enemyAdjacent;
-    }
 
 
     protected int maxHealth;
@@ -117,7 +119,7 @@ public abstract class BaseHero implements CharacterAction {
     public void die() {
         this.isAlive = false;
         System.out.println(String.format("%s dies!", this.name));
-        this.getHeroTeam().remove(this);
+        setHp(0);
     }
 
     public String toString(){

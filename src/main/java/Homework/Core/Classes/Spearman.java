@@ -19,7 +19,7 @@ public class Spearman extends Melee {
 
     @Override
     public String toString(){
-        return String.format("%s, HP: %d, Stamina: %d, Dmg: %d", getInfo(), getHp(), getStamina(), getStrength());
+        return String.format("%s, HP: %d, Stamina: %d, Dmg: %d, X: %d, Y: %d", getInfo(), getHp(), getStamina(), getStrength(), this.location.getX(), this.location.getY());
     }
     @Override
     public String getInfo(){

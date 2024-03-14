@@ -3,7 +3,6 @@ package Homework.Core.Archetypes;
 import Homework.Core.Concepts.Location;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
 
 public abstract class Melee extends BaseHero {
     public int getStrength() {
@@ -33,8 +32,8 @@ public abstract class Melee extends BaseHero {
     @Override
     public void step() {
         if (this.isAlive && this.stamina >= this.strength){
-            searchAdjacent(searchForTarget(targetTeam));
-            if (isEnemyAdjacent()) {
+            enemyAdjacent(searchForTarget(targetTeam));
+            if (enemyAdjacent(searchForTarget(targetTeam))) {
                 attack(searchForTarget(targetTeam));
             } else {
                 moveTowardTarget(searchForTarget(targetTeam));
@@ -55,23 +54,21 @@ public abstract class Melee extends BaseHero {
     }
 
 
-    protected void searchAdjacent(BaseHero target){
-            if (target.isAlive && target.getHeroTeam() != this.getHeroTeam()) {
-                if (target.getLocation().getX() - this.getLocation().getX() == -1 | target.getLocation().getX() - this.getLocation().getX() == 1 |
-                        target.getLocation().getY() - this.getLocation().getY() == -1 | target.getLocation().getY() - this.getLocation().getY() == 1) {
-                    setEnemyAdjacent(true);
-                }
-            }
+    protected boolean enemyAdjacent(BaseHero target){
+                if (target.getLocation().getX() - this.getLocation().getX() == Math.abs(1) |
+                        target.getLocation().getY() - this.getLocation().getY() == Math.abs(1)) {
+                return true;
+            } else return false;
         }
 
     protected void moveTowardTarget(BaseHero target){
-    if (Math.abs(target.getLocation().getX() - this.location.getX()) < Math.abs(target.getLocation().getY() - this.location.getY())){
+    if (Math.abs(target.getLocation().getX() - this.location.getX()) > Math.abs(target.getLocation().getY() - this.location.getY())){
         if (this.location.getX() > target.getLocation().getX()) {
             this.move(new Location(this.location.getX() -1, this.getLocation().getY()));
         } else if (this.location.getX() < target.getLocation().getX()) {
             this.move(new Location(this.location.getX() + 1, this.getLocation().getY()));
         }
-    } else if (Math.abs(target.getLocation().getX() - this.location.getX()) > Math.abs(target.getLocation().getY() - this.location.getY())) {
+    } else if (Math.abs(target.getLocation().getX() - this.location.getX()) < Math.abs(target.getLocation().getY() - this.location.getY())) {
         if (this.location.getY() > target.getLocation().getY()) {
             this.move(new Location(this.location.getX(), this.getLocation().getY() - 1));
         } else if (this.location.getY() < target.getLocation().getY()) {
@@ -83,7 +80,7 @@ public abstract class Melee extends BaseHero {
         BaseHero target = targetTeam.get(0);
         double nearest = 100;
         for (int i = 0; i < targetTeam.size(); i++) {
-            if (this.location.calculateDistance(targetTeam.get(i).location) <= nearest & targetTeam.get(i).isAlive){
+            if (targetTeam.get(i).isAlive && this.location.calculateDistance(targetTeam.get(i).location) <= nearest){
                 nearest = this.location.calculateDistance(targetTeam.get(i).location);
                 target = targetTeam.get(i);
             }

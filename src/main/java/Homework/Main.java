@@ -17,22 +17,28 @@ public class Main {
     public static ArrayList<BaseHero> greenTeam = new ArrayList<>();
     public static ArrayList<BaseHero> blueTeam = new ArrayList<>();
     public static ArrayList<BaseHero> allTeam = new ArrayList<>();
+    public static ArrayList<BaseHero> winnerTeam = new ArrayList<>();
 
     public static void main(String[] args) {
         init();
         Scanner input = new Scanner(System.in);
         allTeam = sortTeam();
-        while (!blueTeam.isEmpty() & !greenTeam.isEmpty()){
+        while (true){
             View.view();
             input.nextLine();
             for (BaseHero human : allTeam){
                 human.step();
             }
+            if (winnerPresent(greenTeam, blueTeam)){
+                break;
+            }
         }
-        if (greenTeam.isEmpty()){
-            System.out.println("Blue team wins!");
-        } else {
+        if(winnerTeam.equals(greenTeam)){
+            View.view();
             System.out.println("Green team wins!");
+        } else if (winnerTeam.equals(blueTeam)) {
+            View.view();
+            System.out.println("Blue team wins!");
         }
     }
     private static void init(){
@@ -84,5 +90,30 @@ public class Main {
     public static String generateName(){
         Names[] names = Names.values();
         return names[new Random().nextInt(names.length)].toString();
+    }
+
+    public static boolean winnerPresent (ArrayList<BaseHero> greenTeam, ArrayList<BaseHero> blueTeam){
+        boolean greenTeamAlive = false;
+        boolean blueTeamAlive = false;
+        for(BaseHero human: greenTeam){
+            if (human.isAlive()) {
+                greenTeamAlive = true;
+                break;
+            }
+        }
+        for(BaseHero human: blueTeam){
+            if (human.isAlive()) {
+                blueTeamAlive = true;
+                break;
+            }
+        }
+        if (!greenTeamAlive){
+            winnerTeam = blueTeam;
+            return true;
+        }
+        else if (!blueTeamAlive) {
+            winnerTeam = greenTeam;
+            return true;
+        } else {return false;}
     }
 }
